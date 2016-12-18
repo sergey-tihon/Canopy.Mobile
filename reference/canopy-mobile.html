@@ -52,12 +52,6 @@
     <tbody>
         <tr>
           <td class="type-name">
-            <a href="canopy-mobile-direction.html">Direction</a>
-          </td>
-          <td class="xmldoc"></td>
-        </tr>
-        <tr>
-          <td class="type-name">
             <a href="canopy-mobile-executionsource.html">ExecutionSource</a>
           </td>
           <td class="xmldoc"></td>
@@ -101,14 +95,94 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2', 2)" onmouseover="showTip(event, '2', 2)">
-            getCapabilities appName
+            exists selector
           </code>
           <div class="tip" id="2">
-            <strong>Signature:</strong> appName:&#39;?7196 -&gt; DesiredCapabilities<br />
-                          <strong>Type parameters:</strong> '?7196          </div>
+            <strong>Signature:</strong> selector:Selector -&gt; bool<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L34-34" class="github-link">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L85-85" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns true when the selector matches an element on the current page or otherwise false.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
+            find selector
+          </code>
+          <div class="tip" id="3">
+            <strong>Signature:</strong> selector:Selector -&gt; IWebElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L79-79" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the first element that matches the given selector.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
+            findAll selector
+          </code>
+          <div class="tip" id="4">
+            <strong>Signature:</strong> selector:Selector -&gt; IWebElement list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L76-76" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns all elements that match the given selector.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+            findElements selector reliable timeout
+          </code>
+          <div class="tip" id="5">
+            <strong>Signature:</strong> selector:Selector -&gt; reliable:bool -&gt; timeout:float -&gt; IWebElement list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L61-61" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Finds elements on the current page.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+            getCapabilities appName
+          </code>
+          <div class="tip" id="6">
+            <strong>Signature:</strong> appName:&#39;?7186 -&gt; DesiredCapabilities<br />
+                          <strong>Type parameters:</strong> '?7186          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L30-30" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -118,10 +192,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
+          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
             getExecutionSource ()
           </code>
-          <div class="tip" id="3">
+          <div class="tip" id="7">
             <strong>Signature:</strong> unit -&gt; ExecutionSource<br />
                       </div>
         </td>
@@ -136,10 +210,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
+          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
             getTestServerAddress ()
           </code>
-          <div class="tip" id="4">
+          <div class="tip" id="8">
             <strong>Signature:</strong> unit -&gt; Uri<br />
                       </div>
         </td>
@@ -154,46 +228,70 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
             quit ()
           </code>
-          <div class="tip" id="5">
+          <div class="tip" id="9">
             <strong>Signature:</strong> unit -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L55-55" class="github-link">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L53-53" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Quits the web driver</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
             start appName
           </code>
-          <div class="tip" id="6">
-            <strong>Signature:</strong> appName:&#39;?7198 -&gt; unit<br />
-                          <strong>Type parameters:</strong> '?7198          </div>
+          <div class="tip" id="10">
+            <strong>Signature:</strong> appName:&#39;?7188 -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?7188          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L45-45" class="github-link">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L42-42" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Starts the webdriver with the given app.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            tryFind selector
+          </code>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> selector:Selector -&gt; IWebElement option<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/fsprojects/Canopy.Mobile/tree/master/src/Canopy.Mobile/Canopy.Mobile.fs#L82-82" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the first element that matches the given selector or None if no such element exists.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
             waitTimeout 
           </code>
-          <div class="tip" id="7">
+          <div class="tip" id="12">
             <strong>Signature:</strong> float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
